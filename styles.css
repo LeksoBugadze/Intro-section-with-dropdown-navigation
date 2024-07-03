@@ -222,6 +222,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     gap: 30px;
 }
 
@@ -235,6 +236,7 @@ main{
     cursor: pointer;
     transition: border 0.1s, background-color 0.2s, color 0.2s;
     border-style: solid;
+    
 }
 
 .paragraph-box-mobile button:active{
@@ -262,8 +264,8 @@ main{
     display: flex;
     align-items: center;
     gap: 10px;
-    position: fixed;
-    bottom: 90px;
+    position: absolute;
+
 }
 
 @media only screen and (max-width:376px){
@@ -282,11 +284,15 @@ main{
 
     .client-box-mobile{
         transform: scale(0.75);
-        bottom: 50px;
+        bottom: -50px;
     }
 }
 
 @media only screen and (min-width:377px) and (max-width: 600px){
+    .client-box-mobile{
+        transform: scale(0.9);
+        bottom: -70px;
+    }
     .wrapper-windows{
         display: none;
     }    
@@ -298,6 +304,9 @@ main{
 
 
 @media only screen and (min-width: 601px) and (max-width: 768px){
+    .client-box-mobile{
+        transform: translateY(100px);
+    }
     .image1-mobile{
         width:600px;
     }
@@ -307,7 +316,11 @@ main{
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1440px){
+@media only screen and (min-width: 769px) and (max-width: 1439px){
+    
+    .client-box-mobile{
+        transform: translateY(100px);
+    }
     .image1-mobile{
         width: 600px;
     }
@@ -319,6 +332,10 @@ main{
 
 
 @media(min-width:1440px){
+    .client-box-mobile{
+        transform: scale(1.1);
+        bottom: 30px;
+    }
     .wrapper-mobile{
         display: none;
     }
@@ -331,7 +348,7 @@ main{
         margin-top: 0;
     }
     .image1{
-        width: 560px;
+        width: 500px;
     }
 
     .client-box{
