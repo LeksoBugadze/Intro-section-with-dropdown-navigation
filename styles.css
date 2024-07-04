@@ -342,7 +342,7 @@ main{
 @media(min-width:1440px){
     .client-box-mobile{
         transform: scale(1.1);
-        bottom: 200px;
+        bottom: 100px;
     }
     .wrapper-mobile{
         display: none;
@@ -354,8 +354,8 @@ main{
 
     main{
         margin-top: 0;
-        margin-left: 350px;
-        margin-right: 350px;
+        margin-left: 150px;
+        margin-right: 150px;
     }
     .image1{
         width: 500px;
