@@ -335,16 +335,14 @@ main{
         width: 600px;
     }
 
-    .client-box-mobile{
-        bottom: 40px;
-    }
+
 }
 
 
 @media(min-width:1440px){
     .client-box-mobile{
         transform: scale(1.1);
-        bottom: 30px;
+        bottom: 200px;
     }
     .wrapper-mobile{
         display: none;
@@ -356,6 +354,8 @@ main{
 
     main{
         margin-top: 0;
+        margin-left: 450px;
+        margin-right: 450px;
     }
     .image1{
         width: 500px;
@@ -363,6 +363,12 @@ main{
 
     .client-box{
         gap: 50px;
+    }
+    .image{
+        transform: scale(0.8);
+    }
+    nav a,p,button{
+        font-size: 15px;
     }
 }
 
